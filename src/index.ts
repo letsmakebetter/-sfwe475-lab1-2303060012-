@@ -1,4 +1,20 @@
-import { addTask, findTask, type Task } from "./tasks";
+type Task = {
+  id: number;
+  title: string;
+};
+
+function addTask(tasks: Task[], title: string): Task[] {
+  const newTask: Task = {
+    id: tasks.length + 1,
+    title,
+  };
+
+  return [...tasks, newTask];
+}
+
+function findTask(tasks: Task[], id: number): Task | undefined {
+  return tasks.find((task) => task.id === id);
+}
 
 let tasks: Task[] = [];
 
