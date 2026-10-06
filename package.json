@@ -1,0 +1,29 @@
+{
+  "name": "-sfwe475-lab1-2303060012-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start": "tsx index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letsmakebetter/-sfwe475-lab1-2303060012-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/letsmakebetter/-sfwe475-lab1-2303060012-/issues"
+  },
+  "homepage": "https://github.com/letsmakebetter/-sfwe475-lab1-2303060012-#readme",
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  }
+}
