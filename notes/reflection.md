@@ -11,3 +11,6 @@ TypeScript checks the types declared in the source code at compile time, but it 
 ## 3. What is the difference between `parse` and `safeParse`, and why does `createTask` use `safeParse`?
 
 `parse` returns the validated data when validation succeeds but throws an error when validation fails. `safeParse` returns a result object containing either the validated data or validation errors, so `createTask` can handle invalid external input without throwing an exception.
+## Boundary Validation
+
+The application validates external data at its boundary before treating it as an internal Task model. This prevents invalid runtime data from silently entering the application.
