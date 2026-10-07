@@ -11,7 +11,7 @@ export async function fetchTodo(id: number) {
     }
 
     const data: unknown = await response.json();
-
+// Validate external API data before treating it as a Task.
     const result = TaskSchema.safeParse(data);
 
     if (!result.success) {
